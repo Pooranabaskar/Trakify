@@ -1,0 +1,1103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.outer-layer-for-signup {
+    height: 100%;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+}
+
+.side-bar {
+    width: 100%;
+    height: 40%;
+    background-color: #110537;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-area {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-page {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.249);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: -20%;
+    background-color: white;
+    flex-direction: column;
+}
+
+.lore-con {
+    width: 60%;
+    font-size: 30px;
+    color: white;
+    margin-left: 12%;
+    display: none;
+    margin-top: 100px;
+}
+
+.login-name {
+    margin-top: 50px;
+}
+
+.input-field {
+    height: 47%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-field>input {
+    width: 80%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 22px;
+}
+
+.btn-for-login {
+    border: 2px solid #110537;
+    font-size: 20px;
+    height: 45px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #110537;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.small-sign {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signup-page {
+    display: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.249);
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    margin-top: -20%;
+    background-color: white;
+    flex-direction: column;
+}
+
+.small-login {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cycleTrack {
+    width: 100%;
+}
+
+.blac {
+    display: none;
+}
+
+.flex-img {
+    display: none;
+}
+
+@media screen and (min-width: 550px) {
+    .login-page {
+        height: 90%;
+        width: 500px;
+        margin-top: -150px;
+    }
+
+    .signup-page {
+        height: 90%;
+        width: 500px;
+        margin-top: -150px;
+    }
+
+    .cycleTrack {
+        width: 70%;
+        margin-top: -10%;
+    }
+
+    .side-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .login-page {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.090);
+        height: 550px;
+        width: 450px;
+    }
+
+    .signup-page {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.090);
+        height: 550px;
+        width: 450px;
+    }
+
+    .sign-area {
+        margin-top: 400px;
+        margin-right: 100px;
+    }
+
+    .outer-layer-for-signup {
+        height: 100%;
+        display: flex;
+    }
+
+    .side-bar {
+        transition: .5s;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+        animation-name: clipfan;
+        animation-duration: 2s;
+    }
+
+    @keyframes clipfan {
+        0% {
+            width: 0%;
+            opacity: 0;
+        }
+
+        100% {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    .input-field {
+        margin-top: 10%;
+        height: 40%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .lore-con {
+        display: block;
+    }
+
+    .side-bar {
+        display: block;
+    }
+}
+
+.dont {
+    margin-top: 30px;
+}
+
+.outer-layer-for-habit {
+    height: 100%;
+    display: none;
+}
+
+.top-bar {
+    height: 60px;
+    width: 100%;
+    background-color: #110537;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    width: 100px;
+    transform: scale(1.8);
+    margin-right: 20px;
+}
+
+.menu {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.habit-side-bar {
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.124);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-400px);
+    background-color: white;
+    transition: .5s;
+    background-color: #110537;
+    z-index: 2;
+}
+
+.left-arrow {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#arrow-back {
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.options {
+    padding: 15px;
+    height: 85%;
+}
+
+.habit-btn {
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 23px;
+    color: white;
+    margin-top: 20px;
+    height: 30px;
+    padding: 20px;
+    cursor: pointer;
+    margin-left: -20px;
+}
+
+.options>div>p {
+    margin-left: 10px;
+}
+
+.habit-section {
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.logout {
+    color: white;
+    display: flex;
+    font-size: 23px;
+    border-top: 1px solid rgba(0, 128, 128, 0.124);
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+}
+
+.habit-heading {
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 650;
+}
+
+.habit-input {
+    width: 300px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(238, 242, 245);
+    margin-left: 10px;
+}
+
+.create-habit {
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    margin-left: 15px;
+    background-color: transparent;
+    width: 240px;
+}
+
+.habit1 {
+    width: 330px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.100);
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.content-box {
+    width: 60%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.chart-box {
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -10px;
+    height: 100%;
+    justify-content: end;
+}
+
+.small-chart {
+    border: 1px solid red;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    right: -100%;
+    background-color: white;
+    transition: .5s;
+}
+
+.view-and-del {
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    color: #bb0202b2;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.streak,
+.score {
+    width: 50%;
+    text-align: center;
+    display: flex;
+}
+
+.streak-and-score {
+    width: 200px;
+    display: flex;
+    color: rgba(0, 128, 128, 0.638);
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.arrow-forward {
+    transform: scale(0.7);
+}
+
+.view-chart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 2s;
+    color: #475c47;
+}
+
+.content-box>h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #6e0b40;
+}
+
+.del {
+    transform: scale(0.9);
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.slide {
+    transition: .5s;
+    right: 0;
+}
+
+.outer-habit {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.name-check {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+    word-wrap: break-word;
+}
+
+.checkbox {
+    transform: scale(1.2);
+    position: absolute;
+}
+
+.chart-layer {
+    width: 375px;
+    position: absolute;
+    height: calc(100vh);
+    left: 100%;
+    display: none;
+    top: 0;
+    left: calc(100% - 375px);
+    background-color: white;
+    z-index: 20;
+    flex-direction: column;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.136);
+    border-radius: 7px;
+}
+
+.parent-check {
+    position: relative;
+}
+
+.back-arrow {
+    padding: 10px;
+}
+
+.outer-charts {
+    width: 100%;
+    height: calc(100%);
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.charts {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: block;
+    right: 0;
+    background-color: white;
+}
+
+.chart {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.092);
+    right: 0;
+    overflow: auto;
+}
+
+.habit-name {
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.line-chart {
+    height: 250px;
+    position: relative;
+}
+
+#line-chart {
+    margin-top: 30px;
+}
+
+.actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 5px;
+}
+
+.action2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 5px;
+}
+
+.bar-chart {
+    height: 250px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.arrow-back {
+    padding: 20px;
+}
+
+.todo {
+    display: none;
+    height: calc(100% - 60px);
+    width: 100%;
+}
+
+.todo-heading {
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 650;
+}
+
+.show-todo {
+    height: calc(100% - 125px);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+}
+
+.todo-outer {
+    height: 50px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.101);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 200px;
+}
+
+.todo-name {
+    margin-left: 10px;
+}
+
+.activetodo-name {
+    display: none;
+}
+
+.finishedtodo-name {
+    display: none;
+}
+
+.active-todo {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.del-todo {
+    transform: scale(0.95);
+    color: rgba(255, 0, 0, 0.517);
+    margin-top: 2px;
+}
+
+.streakScore {
+    width: 40%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 305px;
+}
+
+.content-box {
+    position: relative;
+    left: 0;
+}
+
+.streakArrow {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dispScore {
+    position: absolute;
+    top: 0;
+    width: 160%;
+    height: 100%;
+    right: -100px;
+    background-color: white;
+    transition: .5s;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.100);
+    border-radius: 10px;
+}
+
+.dispScore2 {
+    right: 62px;
+}
+
+.hero {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.score-number {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.streak-number {
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.hori-bar {
+    width: 375px;
+
+}
+
+#hori-bar {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.finished-todo {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+@media screen and (max-width:2000px) {
+    .outer-habit {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: calc(100vh - 195px);
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .habit-side-bar {
+        width: 35%;
+    }
+
+    .show-habits {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .habit1 {
+        margin-left: 20px;
+
+    }
+}
+
+@media screen and (min-width:1204px) {
+    .show-todo {
+        flex-direction: row;
+        align-items: flex-start;
+        width: 80%;
+        justify-content: space-around;
+        margin-top: 30px;
+        height: calc(100% - 160px);
+        overflow: hidden;
+    }
+
+    .active-todo {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .active-todo::-webkit-scrollbar {
+        display: none;
+    }
+
+    .finished-todo {
+        height: min-content;
+    }
+
+    .finished-todo::-webkit-scrollbar {
+        display: none;
+    }
+
+    .chart {
+        width: 400px;
+        left: -25px;
+    }
+
+    .inner-todo {
+        height: 100%;
+        overflow: scroll;
+    }
+
+    #calendar {
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    .show-habits {
+        width: 400px;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .active-todo {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .active-todo::-webkit-scrollbar {
+        display: none;
+    }
+
+    .finished-todo {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .chart {
+        width: 500px;
+    }
+
+    .charts {
+        width: 500px;
+    }
+
+    .finished-todo::-webkit-scrollbar {
+        display: none;
+    }
+
+    .show-todo {
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    .outer-habit {
+        flex-direction: row;
+    }
+
+    .habit-side-bar {
+        margin-left: 400px;
+        width: 200px;
+        z-index: 0;
+        box-shadow: none;
+        background-color: white;
+        border-right: 1px solid rgba(0, 255, 255, 0.12);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .habit-btn {
+        color: black;
+    }
+
+    .logout {
+        color: black;
+    }
+
+    .top-bar {
+        background-color: #05002d;
+    }
+
+    .habit-section {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+
+    .todo {
+        margin-left: 200px;
+        width: calc(100% - 200px)
+    }
+}
+
+#calendar {
+    height: 450px;
+    margin-top: 50px;
+}
+
+#habit-btn {
+    background-color: rgba(197, 173, 233, 0.173);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#todo-btn {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.habit-btn:hover {
+    transform: scale(1.050);
+    transition: .2s;
+}
+
+
+.outer-habit {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.show-habits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid rgba(83, 81, 209, 0.05); */
+    /* background-color: rgba(228, 228, 244, 0.103); */
+}
+
+.finished-habits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgba(228, 228, 244, 0.103); */
+}
+
+.habit-details-section {
+    border-radius: 10px;
+    width: 20%;
+    height: 80%;
+    display: none;
+    padding: 6px;
+
+}
+
+.chart-todo {
+    display: none;
+    /* justify-content: center; */
+}
+
+.totalhabits {
+    padding: 20px;
+}
+
+.totaltodos {
+    padding: 20px;
+}
+
+.score-streak-section {
+    border-radius: 2px;
+    width: 100%;
+    height: 60%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.075);
+}
+
+.details-of-habits {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.habit-active {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.details-of-todos {
+    width: 200%;
+    height: 100%;
+}
+
+.pie-chart-todo {
+    width: 100%;
+    height: 500px;
+}
+
+.todo-active {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:550px) {
+    .chart {
+        width: 375px;
+
+    }
+
+    .charts {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .outer-habit {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .show-habits {
+        height: 100%;
+        width: 420px;
+        overflow: scroll;
+    }
+
+    .habit1 {
+        flex-shrink: 0;
+    }
+
+    .show-habits::-webkit-scrollbar {
+        display: none;
+    }
+
+    .finished-habits {
+        height: 100%;
+        overflow: scroll;
+        width: 420px;
+    }
+
+    .finished-habits::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media (min-width:800px) and (max-width: 899px) {
+    .show-habits {
+        width: 400px;
+        height: fit-content;
+    }
+
+    .show-habits {
+        padding: 10px;
+        height: 95%;
+        overflow: auto;
+    }
+
+    .finished-habits {
+        height: 95%;
+        padding: 10px;
+        width: 400px;
+        overflow: auto;
+        border-left: 2px solid rgba(83, 81, 209, 0.05);
+        margin-left: 10px;
+    }
+
+    .habit1 {
+        flex-shrink: 0;
+    }
+
+    .outer-habit {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .inner-todo {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .finished-todo {
+        overflow: auto;
+    }
+
+    .finished-habits {
+        border-left: 2px solid rgba(83, 81, 209, 0.05);
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .finished-todo {
+        margin-top: 0px;
+        height: 100%;
+        overflow: scroll;
+    }
+}
+
+
+@media screen and (min-width:1400px) {
+    .habit-details-section {
+        display: block;
+        width: 45%;
+        height: 100%;
+        margin-left: 60px;
+    }
+
+    .show-todo {
+        width: 100%;
+    }
+
+    .chart-todo {
+        width: 39%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.075);
+        display: flex;
+        height: 60%;
+    }
+
+    .inner-todo {
+        display: flex;
+        height: 100%;
+        overflow: auto;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .chart {
+        width: 500px;
+        padding: 10px;
+        margin-left: 20px;
+        position: absolute;
+
+    }
+
+    .charts {
+        width: 500px;
+        right: 0;
+    }
+
+    #calendar {
+        width: 460px;
+        height: 530px;
+    }
+}
+
+.ongoing {
+    margin-left: -230px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
